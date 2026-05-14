@@ -1,0 +1,282 @@
+[
+  {
+    "id": "u1",
+    "username": "traffic_admin",
+    "password": "u1@123",
+    "plainPassword": "traffic123",
+    "name": "Ravi Shankar",
+    "role": "traffic_authority",
+    "email": "ravi@traffic.gov.in",
+    "department": "Bangalore Traffic Police",
+    "departmentId": "BTP-001",
+    "permissions": [
+      "view_map",
+      "control_signals",
+      "override_signals",
+      "view_ambulances",
+      "view_emergencies",
+      "view_analytics"
+    ],
+    "profileCompleted": true,
+    "createdAt": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "u2",
+    "username": "driver_rajesh",
+    "password": "u2@123",
+    "plainPassword": "driver123",
+    "name": "Rajesh Kumar",
+    "role": "ambulance_driver",
+    "email": "rajesh@ambulance.in",
+    "phone": "+91 98765 43210",
+    "ambulanceId": "a1",
+    "vehicleNumber": "KA-01-AM-1001",
+    "medicalSupportLevel": "Advanced Life Support",
+    "permissions": [
+      "activate_emergency",
+      "share_gps",
+      "receive_routes",
+      "view_own_location"
+    ],
+    "profileCompleted": true,
+    "createdAt": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "u3",
+    "username": "hospital_apollo",
+    "password": "u3@123",
+    "plainPassword": "hospital123",
+    "name": "Dr. Meera Nair",
+    "role": "hospital",
+    "email": "meera@apollo.com",
+    "hospitalId": "h2",
+    "hospitalName": "Apollo Emergency Center",
+    "permissions": [
+      "update_beds",
+      "receive_alerts",
+      "view_incoming",
+      "view_eta"
+    ],
+    "profileCompleted": true,
+    "createdAt": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "sysadmin",
+    "username": "sysadmin",
+    "password": "admin@123",
+    "plainPassword": "GW_Admin@2026!",
+    "name": "System Administrator",
+    "role": "system_admin",
+    "email": "admin@setcs.gov.in",
+    "permissions": [
+      "manage_users",
+      "manage_system",
+      "view_logs",
+      "reset_data",
+      "view_analytics",
+      "manage_backend",
+      "view_all"
+    ],
+    "profileCompleted": true,
+    "isFixedAdmin": true,
+    "createdAt": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "u5",
+    "username": "public_user",
+    "password": "u5@123",
+    "plainPassword": "public123",
+    "name": "Public Citizen",
+    "role": "public_user",
+    "email": "citizen@gmail.com",
+    "permissions": [
+      "receive_alerts",
+      "view_nearby_ambulances",
+      "clear_path_guidance"
+    ],
+    "profileCompleted": true,
+    "createdAt": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "u_drv_1778602748204",
+    "username": "test_driver1",
+    "password": "u6@123",
+    "name": "Test Driver",
+    "phone": "+91 99999 11111",
+    "address": "Bangalore",
+    "email": "testdriver@test.com",
+    "age": 30,
+    "dob": "1996-01-15",
+    "role": "ambulance_driver",
+    "permissions": [
+      "activate_emergency",
+      "share_gps",
+      "receive_routes",
+      "view_own_location"
+    ],
+    "profileCompleted": true,
+    "vehicleNumber": "KA-02-AM-2001",
+    "medicalSupportLevel": "Advanced Life Support",
+    "ambulanceId": "a2",
+    "status": "active",
+    "deviceId": null,
+    "createdAt": "2026-05-12T16:19:08.204Z"
+  },
+  {
+    "id": "u_trf_1778602750908",
+    "username": "test_officer1",
+    "password": "u7@123",
+    "name": "Test Officer",
+    "departmentName": "Traffic Police Central",
+    "department": "Bangalore Traffic Police - Central Division",
+    "departmentId": "BTP-001",
+    "address": "MG Road",
+    "phone": "+91 99999 22222",
+    "email": "testofficer@traffic.gov.in",
+    "role": "traffic_authority",
+    "permissions": [
+      "view_map",
+      "control_signals",
+      "override_signals",
+      "view_ambulances",
+      "view_emergencies",
+      "view_analytics"
+    ],
+    "profileCompleted": true,
+    "createdAt": "2026-05-12T16:19:10.908Z"
+  },
+  {
+    "id": "u_hos_1778602753658",
+    "username": "test_hospital1",
+    "password": "u8@123",
+    "name": "Test Medical Center Admin",
+    "email": "testhospital@test.com",
+    "phone": "+91 80 9999 8888",
+    "role": "hospital",
+    "hospitalId": "h_1778602753658",
+    "hospitalName": "Test Medical Center",
+    "permissions": [
+      "update_beds",
+      "receive_alerts",
+      "view_incoming",
+      "view_eta"
+    ],
+    "profileCompleted": false,
+    "createdAt": "2026-05-12T16:19:13.658Z"
+  },
+  {
+    "id": "u_drv_1778602907552",
+    "username": "test_driver_1",
+    "password": "u9@123",
+    "name": "Test Driver",
+    "phone": "+91 99999 11111",
+    "address": "Test Address",
+    "email": "test.driver@test.com",
+    "age": 30,
+    "dob": "1996-01-15",
+    "role": "ambulance_driver",
+    "permissions": [
+      "activate_emergency",
+      "share_gps",
+      "receive_routes",
+      "view_own_location"
+    ],
+    "profileCompleted": true,
+    "vehicleNumber": "KA-01-AM-9999",
+    "medicalSupportLevel": "Advanced Life Support",
+    "ambulanceId": "a3",
+    "status": "active",
+    "deviceId": null,
+    "createdAt": "2026-05-12T16:21:47.552Z"
+  },
+  {
+    "id": "u_trf_1778602910151",
+    "username": "officer_test_1",
+    "password": "u10@123",
+    "name": "Officer Test",
+    "departmentName": "Central Traffic",
+    "department": "Bangalore Traffic Police - Central Division",
+    "departmentId": "BTP-001",
+    "address": "HQ Road",
+    "phone": "+91 88888 22222",
+    "email": "officer@traffic.gov.in",
+    "role": "traffic_authority",
+    "permissions": [
+      "view_map",
+      "control_signals",
+      "override_signals",
+      "view_ambulances",
+      "view_emergencies",
+      "view_analytics"
+    ],
+    "profileCompleted": true,
+    "createdAt": "2026-05-12T16:21:50.151Z"
+  },
+  {
+    "id": "u_hos_1778602911741",
+    "username": "hosp_test_1",
+    "password": "u11@123",
+    "name": "Test General Hospital Admin",
+    "email": "admin@testhosp.com",
+    "phone": "+91 77777 33333",
+    "role": "hospital",
+    "hospitalId": "h_1778602911741",
+    "hospitalName": "Test General Hospital",
+    "permissions": [
+      "update_beds",
+      "receive_alerts",
+      "view_incoming",
+      "view_eta"
+    ],
+    "profileCompleted": false,
+    "createdAt": "2026-05-12T16:21:51.741Z"
+  },
+  {
+    "id": "u_drv_1778736848890",
+    "username": "rahul_hs",
+    "password": "u12@123",
+    "name": "Ravi",
+    "phone": "+916376766886",
+    "address": "Bengalore",
+    "email": "rahulhs24cs@rnsit.ac.in",
+    "age": 27,
+    "dob": "1999-05-04",
+    "role": "ambulance_driver",
+    "permissions": [
+      "activate_emergency",
+      "share_gps",
+      "receive_routes",
+      "view_own_location"
+    ],
+    "profileCompleted": true,
+    "vehicleNumber": "KA-03-0987",
+    "medicalSupportLevel": "Advanced Life Support",
+    "ambulanceId": "a4",
+    "status": "active",
+    "deviceId": "web-browser-1",
+    "createdAt": "2026-05-14T05:34:08.890Z"
+  },
+  {
+    "id": "u_trf_1778737229662",
+    "username": "rahul",
+    "password": "u13@123",
+    "name": "okjkij",
+    "departmentName": "hhyhuhj",
+    "department": "Bangalore Traffic Police - Central Division",
+    "departmentId": "BTP-001",
+    "address": "Bengalore",
+    "phone": "+916360811822",
+    "email": "rahulhs24cs@rnsit.ac.in",
+    "role": "traffic_authority",
+    "permissions": [
+      "view_map",
+      "control_signals",
+      "override_signals",
+      "view_ambulances",
+      "view_emergencies",
+      "view_analytics"
+    ],
+    "profileCompleted": true,
+    "createdAt": "2026-05-14T05:40:29.663Z"
+  }
+]

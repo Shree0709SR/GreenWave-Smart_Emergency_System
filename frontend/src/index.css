@@ -1,0 +1,104 @@
+/* ===== SETCS Design System — Emergency Theme ===== */
+:root {
+  /* Backgrounds — Dark Mode */
+  --bg-primary: #121212;
+  --bg-secondary: #1A1A1A;
+  --bg-card: #242424;
+  --bg-card-hover: #2E2E2E;
+  --bg-glass: rgba(26, 26, 26, 0.8);
+  /* Text */
+  --text-primary: #FFFFFF;
+  --text-secondary: #B0B0B0;
+  --text-muted: #6B6B6B;
+  /* Primary — Emergency Red */
+  --accent-red: #E53935;
+  --accent-red-glow: rgba(229, 57, 53, 0.3);
+  /* Success — Green */
+  --accent-green: #43A047;
+  --accent-green-glow: rgba(67, 160, 71, 0.3);
+  /* Secondary — Trust Blue */
+  --accent-blue: #1E88E5;
+  --accent-blue-glow: rgba(30, 136, 229, 0.25);
+  /* Caution — Yellow */
+  --accent-amber: #FDD835;
+  --accent-amber-glow: rgba(253, 216, 53, 0.25);
+  --accent-purple: #7B1FA2;
+  --accent-cyan: #1E88E5;
+  /* Gradients */
+  --gradient-main: linear-gradient(135deg, #E53935 0%, #1E88E5 100%);
+  --gradient-emergency: linear-gradient(135deg, #E53935 0%, #C62828 100%);
+  --gradient-success: linear-gradient(135deg, #43A047 0%, #2E7D32 100%);
+  /* Borders & Effects */
+  --border-color: rgba(255,255,255,0.08);
+  --border-glow: rgba(30, 136, 229, 0.35);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --shadow-card: 0 4px 24px rgba(0,0,0,0.4);
+  --shadow-glow: 0 0 30px rgba(30, 136, 229, 0.15);
+  /* Typography */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 16px; scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root { min-height: 100vh; display: flex; flex-direction: column; }
+
+a { color: var(--accent-blue); text-decoration: none; transition: color 0.2s; }
+a:hover { color: var(--accent-cyan); }
+
+button {
+  font-family: var(--font-sans);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+input, select, textarea {
+  font-family: var(--font-sans);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  transition: border-color 0.2s;
+}
+input:focus, select:focus, textarea:focus {
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 0 3px var(--accent-blue-glow);
+  outline: none;
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb { background: var(--text-muted); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-secondary); }
+
+/* Leaflet overrides */
+.leaflet-container { background: var(--bg-primary) !important; border-radius: var(--radius-lg); }
+.leaflet-popup-content-wrapper { background: var(--bg-card) !important; color: var(--text-primary) !important; border-radius: var(--radius-md) !important; box-shadow: var(--shadow-card) !important; }
+.leaflet-popup-tip { background: var(--bg-card) !important; }
+.leaflet-popup-content { margin: 12px 16px !important; font-family: var(--font-sans) !important; }
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 8px var(--accent-red-glow); }
+  50% { box-shadow: 0 0 24px var(--accent-red-glow), 0 0 48px var(--accent-red-glow); }
+}
+@keyframes slide-up { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes spin { to { transform: rotate(360deg); } }

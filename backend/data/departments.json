@@ -1,0 +1,27 @@
+[
+  {
+    "departmentId": "BTP-001",
+    "name": "Bangalore Traffic Police - Central Division",
+    "password": "CentralDiv@2026"
+  },
+  {
+    "departmentId": "BTP-002",
+    "name": "Bangalore Traffic Police - North Division",
+    "password": "NorthDiv@2026"
+  },
+  {
+    "departmentId": "BTP-003",
+    "name": "Bangalore Traffic Police - South Division",
+    "password": "SouthDiv@2026"
+  },
+  {
+    "departmentId": "BTP-004",
+    "name": "Bangalore Traffic Police - East Division",
+    "password": "EastDiv@2026"
+  },
+  {
+    "departmentId": "BTP-005",
+    "name": "Bangalore Traffic Police - West Division",
+    "password": "WestDiv@2026"
+  }
+]
