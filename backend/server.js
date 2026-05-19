@@ -426,7 +426,12 @@ async function startServer() {
     await connectDB();
 
     // Load data from MongoDB into memory
-    await loadDataFromDB();
+    try {
+  await loadDataFromDB();
+    console.log("Data loaded successfully");
+  } catch (error) {
+    console.error("Error loading DB data:", error);
+  }
 
     // Start HTTP server
     server.listen(PORT, () => {
