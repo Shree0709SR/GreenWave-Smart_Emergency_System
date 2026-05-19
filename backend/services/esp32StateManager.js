@@ -185,11 +185,13 @@ class ESP32StateManager {
   // ─── Connectivity ────────────────────────────────
 
   /**
-   * Check if ESP32 has polled within the last 5 seconds
+   * Check if ESP32 has polled within the last 15 seconds.
+   * ESP32 polls every ~1s, but network latency + HTTP overhead
+   * can cause gaps, so we use a generous 15-second window.
    */
   isConnected() {
     if (!this.lastPollTime) return false;
-    return (Date.now() - this.lastPollTime) < 5000;
+    return (Date.now() - this.lastPollTime) < 15000;
   }
 
   // ─── Internal Helpers ────────────────────────────
