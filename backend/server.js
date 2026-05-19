@@ -43,7 +43,7 @@ const io = new Server(server, {
       "http://localhost:5173",
       "http://localhost:3000",
       "http://127.0.0.1:5173",
-      "https://green-wave-smart-emergencysystem.netlify.app"
+      "https://greenwave-smartemergencysystem.netlify.app"
     ],
     methods: ["GET", "POST", "PATCH", "DELETE"],
   },
@@ -56,7 +56,7 @@ app.use(
       "http://localhost:5173",
       "http://localhost:3000",
       "http://127.0.0.1:5173",
-      "https://green-wave-smart-emergencysystem.netlify.app"
+      "https://greenwave-smartemergencysystem.netlify.app"
     ],
     methods: ["GET", "POST", "PATCH", "DELETE"],
     credentials: true,
