@@ -1,7 +1,7 @@
 import { io } from 'socket.io-client';
 
-const API_BASE = 'http://localhost:5000/api';
-const socket = io('http://localhost:5000', { autoConnect: true, reconnection: true, reconnectionDelay: 1000 });
+const API_BASE = 'https://greenwave-smart-emergency-system.onrender.com/api';
+const socket = io('https://greenwave-smart-emergency-system.onrender.com', { autoConnect: true, reconnection: true, reconnectionDelay: 1000 });
 
 // ---- REST helpers ----
 function getToken() { return sessionStorage.getItem('setcs_token'); }
