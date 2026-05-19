@@ -131,7 +131,7 @@ async function loadDataFromDB() {
 
     // Seed demo analytics data if no emergencies exist
     if (dataStore.emergencies.length === 0) {
-      seedDemoAnalytics();
+      // seedDemoAnalytics();
     }
   } catch (error) {
     console.error('  ❌ Failed to load data from MongoDB:', error.message);
@@ -162,7 +162,7 @@ function seedDemoAnalytics() {
         lat: 12.93 + Math.random() * 0.08,
         lng: 77.55 + Math.random() * 0.1
       },
-      ambulanceId: ambulance.id,
+      ambulanceId: ambulance?.id,
       hospital: { id: hospital.id, name: hospital.name, lat: hospital.lat, lng: hospital.lng },
       routeToPatient: { distance: parseFloat((1.5 + Math.random() * 4).toFixed(2)), estimatedTime: Math.floor(4 + Math.random() * 8), signalsOnRoute: [], waypoints: [], routePoints: [] },
       routeToHospital: { distance: parseFloat((2 + Math.random() * 5).toFixed(2)), estimatedTime: Math.floor(5 + Math.random() * 10), signalsOnRoute: [], waypoints: [], routePoints: [] },
